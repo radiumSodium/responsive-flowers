@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --noto-serif: "Noto Serif", serif;
+    --inter: "Inter", sans-serif;
+    --light-grey: #8987A1;
+    --active-black:#252432;
+    --title-orange: #E95A08;
+    --description-grey: rgba(0, 0, 0, 0.5);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    font-family: var(--inter);
+
+}
+
+
+.container{
+    max-width: 1440px;
+    margin:  0 auto;
+}
+
+.title{
+    font-weight: bold;
+    font-family: var(--noto-serif);
+}
+.span-title{
+    color: var(--title-orange);
+}
+
+
+/* Navbar  */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+nav ul div{
+    display: flex;
+    gap: 3rem;
+}
+
+li a {
+    text-decoration: none;
+    color: var(--light-grey);
+}
+ul > a {
+    color: black;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 9.375rem 0 9.375rem;
+
+}
+.logo {
+    color: var(--title-orange);
+}
+.active-nav{
+    color: var(--active-black);
+    font-weight: bold;
+}
+
+.cart-text{
+    padding-left: 10px;
+}
+
+/* Hero  */
+
+.hero{
+    padding: 7.5rem 9.375rem;
+    display: flex;
+    align-items: flex-end;
+}
+
+.hero-title{
+    font-size: 4rem;
+}
+
+.hero-text{
+    flex: 1;
+}
+
+.hero-image{
+    flex: 1;
+}
+
+.hero-description{
+    font-size: 1.375rem;
+    color: var(--description-grey);
+}
+
+
+
+
+
+/* Media Query  */
+
+
+@media screen and (max-width: 576px) {
+
+    .logo{
+        width: 4rem;
+    }
+    .navbar{
+        padding:1rem 1rem 0 1rem ;
+    }
+    nav ul div {
+        display: none;
+    }
+
+    .hero{
+        padding: 0;
+        flex-direction: column-reverse;
+    }
+
+    .hero-image{
+        width: 100%;
+        padding:1.75rem 0;
+    }
+
+    .hero-title{
+        font-size: 1.5rem;
+    }
+    .hero-text{
+        padding: 0 1rem;
+    }
+
+    .hero-description{
+    font-size: 0.875rem;
+}
+
+}
+
+
+@media screen and (min-width:577px ) and ( max-width: 768px){
+    .navbar{
+        padding:1rem 1rem 0 1rem ;
+    }
+    nav ul div {
+        display: none;
+    }
+
+    .hero{
+        padding: 0;
+        flex-direction: column-reverse;
+    }
+
+    .hero-image{
+        width: 100%;
+        padding:1.75rem 0;
+    }
+    .hero-text{
+        padding: 0 1rem;
+    }
+
+    .hero-title{
+
+    }
+}
