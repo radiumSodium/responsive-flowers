@@ -255,15 +255,59 @@ ul > a {
     gap: 25px 28px;
 }
 
+.grid-card{
+    position: relative;
+    border-radius: 14px;
+}
 
 .grid-card img{
     border-radius: 14px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0,.4);
+  border-radius: 14px;
+  z-index: 10;
+}
+.grid-card .grid-card-text {
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  z-index: 11;
+} 
+
+.off{
+    font-family: var(--noto-serif);
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.shopnow{
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: underline;
+}
+
+#zabo-text{
+    font-size: 2.5rem;
 }
 
 
 .join{
     padding: 11.85rem 19rem;
     margin: 0 auto;
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
     background-image: url('/assets/news-letter-bg.png');
 }
 
@@ -295,6 +339,7 @@ ul > a {
 .footer-container{
     padding: 3.125rem 9.376rem;
     display: flex;
+    justify-content: space-around;
 }
 
 .credit-desc {
@@ -304,9 +349,7 @@ ul > a {
     color: rgba(0, 0, 0, 0.5);
 }
 
-.footer-container{
-    justify-content: space-around;
-}
+
 
 .navigation{
     width: 100%;
@@ -422,6 +465,33 @@ ul > a {
         display: grid;
         grid-template-columns: 1fr;
         gap: 20px 0;
+    }
+    .join{
+        padding: 4rem 2.25rem;
+        margin: 0 auto;
+       
+    }
+    .join-title{
+  
+        font-size: 1.25rem;
+       
+    }
+
+    .footer-container{
+        margin: 3.125rem 1.25rem;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .credit-desc{
+        font-size: 1rem;
+    }
+
+    .right,
+    .left{
+        gap: 35px;
+        
     }
     
 }
