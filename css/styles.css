@@ -168,6 +168,8 @@ ul > a {
 }
 
 
+
+
 /* Plant lover  */
 .badge{
     position: absolute;
@@ -221,6 +223,122 @@ ul > a {
     text-indent: -0.1rem;
 }
 
+
+
+/* Latest Deals  */
+
+.latest-deal{
+    padding: 0 9.375rem;
+
+}
+.latest-deal-text{
+    text-align: center;
+}
+
+.latest-deal-title{
+
+    font-weight: bold;
+    font-size: 3.125rem;
+}
+
+.ld-desc{
+    padding-top: 1rem;
+    font-size: 1.375rem;
+
+}
+
+
+.latest-deal-grid{
+    padding: 7.5rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px 28px;
+}
+
+
+.grid-card img{
+    border-radius: 14px;
+}
+
+
+.join{
+    padding: 11.85rem 19rem;
+    margin: 0 auto;
+    background-image: url('/assets/news-letter-bg.png');
+}
+
+.join-title{
+    text-align: center;
+    font-size: 3.125rem;
+    color: white;
+}
+
+.searchbar{
+    margin-top: 1.5rem;
+    display: flex;
+}
+
+.email{
+    flex: 5;
+    background-color: white;
+    padding-left: 20px;
+}
+
+.email:focus{
+    
+}
+
+.btn{
+    flex: 1;
+}
+
+.footer-container{
+    padding: 3.125rem 9.376rem;
+    display: flex;
+}
+
+.credit-desc {
+    max-width: 21rem;
+    padding-top: 1rem;
+    font-size: 1.375rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.footer-container{
+    justify-content: space-around;
+}
+
+.navigation{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.right,
+.left{
+    gap: 3.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.left a,
+.right a{
+    color: var(--light-grey);
+}
+
+.social-container{
+
+    
+}
+.icon-row{
+    gap: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+.social-container a{
+ 
+    width: 36px;
+}
 /* Media Query  */
 
 
@@ -290,6 +408,22 @@ ul > a {
         display: none;
 
     }
+
+    .latest-deal{
+        padding: 0 1rem;
+
+    }
+    .grid-card img{
+        width: 100%;
+    }
+
+    .latest-deal-grid{
+        padding: 7.5rem 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px 0;
+    }
+    
 }
 
 
