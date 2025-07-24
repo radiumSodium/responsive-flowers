@@ -27,6 +27,15 @@ body{
     background-color: var(--background-color);
 }
 
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 
 .container{
     max-width: 1440px;
@@ -176,7 +185,9 @@ ul > a {
     top: -100px;
     right: -100px;
     width: 286px;
+    animation: spin 5s linear infinite;
 }
+
 
 .plant-lover{
    padding: 13.125rem 9.375rem 8.3125rem 9.375rem;
@@ -311,6 +322,10 @@ ul > a {
     background-image: url('/assets/news-letter-bg.png');
 }
 
+.join-container{
+
+}
+
 .join-title{
     text-align: center;
     font-size: 3.125rem;
@@ -410,13 +425,14 @@ ul > a {
         padding: 0 1rem;
     }
 
-    /* .hero-title{
-        font-size: 1.5rem;
-    }
+    .hero-title{
+        font-size: 2rem;
+    } 
 
     .hero-description{
-    font-size: 0.875rem;
-    } */
+        padding-top: 1rem;
+        font-size: 1rem;
+    } 
 
     /* Our Plant  */
 
@@ -425,7 +441,25 @@ ul > a {
     }
 
     .card-grid{
+      
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card-price {
+        font-size: 1rem;
+
+    }
+    .card-title{
+        font-size: 1rem;
+    }
+
+
+    .plant-title{
+        font-size: 1.5rem;
+    }
+
+    .plant-description{
+        font-size: 1rem;
     }
 
     .plant-lover{
@@ -440,21 +474,39 @@ ul > a {
     }
 
     .plant-lover-text{
-        padding: 1rem;
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    .plant-lover-description ul{
+       font-size: 1rem;
     }
 
     .plant-lover-title{
-        font-size: 2rem;
+
+        font-size: 1.5rem;
     }
 
     .badge{
         display: none;
-
+        
     }
+
 
     .latest-deal{
         padding: 0 1rem;
 
+    }
+    .latest-deal-title{
+        padding-top: 8rem;
+        font-size: 1.5rem;
+    }
+    .ld-desc{
+        font-size: 1rem;
+    }
+
+    .zabo-card{
+        order: 99;
     }
     .grid-card img{
         width: 100%;
@@ -467,10 +519,11 @@ ul > a {
         gap: 20px 0;
     }
     .join{
-        padding: 4rem 2.25rem;
+        padding: 4rem 4rem;
         margin: 0 auto;
        
     }
+
     .join-title{
   
         font-size: 1.25rem;
@@ -482,6 +535,7 @@ ul > a {
         display: flex;
         flex-direction: column;
         gap: 20px;
+        padding: 0;
     }
 
     .credit-desc{
