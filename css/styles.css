@@ -505,9 +505,7 @@ ul > a {
         font-size: 1rem;
     }
 
-    .zabo-card{
-        order: 99;
-    }
+
     .grid-card img{
         width: 100%;
     }
@@ -518,6 +516,16 @@ ul > a {
         grid-template-columns: 1fr;
         gap: 20px 0;
     }
+
+    .ana-card{
+        
+    }
+
+    .zabo-card{
+    
+    }
+
+
     .join{
         padding: 4rem 4rem;
         margin: 0 auto;
